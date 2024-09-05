@@ -12,8 +12,8 @@ function Loader() {
 export default function Scene() {
 	return (
 		<Canvas
-			camera={{ position: [2, 1, 2] }}
-			style={{ height: '50vh', width: '50vw' }}
+			camera={{ position: [0, 0, 5] }}
+			style={{ height: '100%', width: '100%' }}
 		>
 			<directionalLight position={[-2, 3, 0]} intensity={10} />
 			<Suspense fallback={<Loader />}>

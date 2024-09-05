@@ -17,6 +17,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
+        <h3 id='title-section1'>Absolute Web Studio</h3>
         <Scene/>
       </main>
     </div>

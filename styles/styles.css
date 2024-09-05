@@ -1,9 +1,9 @@
 header {
 	width: 100vw;
+	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
 }
 
 #navigation-buttons {
@@ -26,4 +26,19 @@ header {
   background-color: rgba(13, 13, 13, 0.5);
   border-radius: 12px;
   opacity: 1;
+}
+
+main {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#title-section1 {
+	position: absolute;
+	margin-top: -30%;
+	font-size: 2rem;
 }
