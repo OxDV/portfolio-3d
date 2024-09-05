@@ -8,13 +8,13 @@ header {
 
 #navigation-buttons {
 	width: 80vw;
+	max-width: 400px;
 	display: flex;
-	gap: 1rem;
 	text-decoration: none;
 	list-style: none;
 	padding: 12px 24px;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	position: relative;
 	border-bottom-width: 1px;
   border-color: rgba(255, 255, 255, 0.1);
@@ -39,6 +39,6 @@ main {
 
 #title-section1 {
 	position: absolute;
-	margin-top: -30%;
+	margin-top: -20%;
 	font-size: 2rem;
 }
