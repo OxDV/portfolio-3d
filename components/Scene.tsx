@@ -3,7 +3,7 @@
 import { Canvas, useThree } from '@react-three/fiber'
 import { Suspense } from 'react'
 import Model from './Model'
-import { useProgress, Html, ScrollControls } from '@react-three/drei'
+import { useProgress, Html } from '@react-three/drei'
 function Loader() {
 	const { progress, active } = useProgress()
 
@@ -11,7 +11,10 @@ function Loader() {
 }
 export default function Scene() {
 	return (
-		<Canvas style={{ height: '100vh', width: '100vw' }}>
+		<Canvas
+			camera={{ position: [2, 1, 2] }}
+			style={{ height: '50vh', width: '50vw' }}
+		>
 			<directionalLight position={[-2, 3, 0]} intensity={10} />
 			<Suspense fallback={<Loader />}>
 				<Model />
