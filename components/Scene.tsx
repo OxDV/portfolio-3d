@@ -11,12 +11,10 @@ function Loader() {
 }
 export default function Scene() {
 	return (
-		<Canvas gl={{ antialias: true }} dpr={[1, 1.5]}   style={{ height: '100vh', width: '100vw' }}>
-			<directionalLight position={[-5, -5, 5]} intensity={4} />
+		<Canvas style={{ height: '100vh', width: '100vw' }}>
+			<directionalLight position={[-2, 3, 0]} intensity={10} />
 			<Suspense fallback={<Loader />}>
-				<ScrollControls damping={0.2} pages={2}>
-					<Model />
-				</ScrollControls>
+				<Model />
 			</Suspense>
 		</Canvas>
 	)
